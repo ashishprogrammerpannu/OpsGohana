@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Ashish">
+    <meta name="description"
+        content="Disclaimer:This Admission website of OPSGohana is just created for fun! No payements are accepted. In this website you can register for OPSGohana school">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>OPS Gohana Admission</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success" id="nav">
+        <a class="navbar-brand logo" href="./index.html">OPS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#nav">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">ContactUS</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <section id="alert" class="container text-center text-danger mt-3">
+        <p id="alerttext"></p>
+    </section>
+    <div class="jumbotron text-center">
+        <h3 class="display-4">Hello, students!</h3>
+        <p class="lead">Please,<a href="#admission">register</a> for your addmission. Fill your details below.</p>
+    </div>
+    <hr>
+    <form class="container mb-4" id="admission">
+        <h1 class="display-5 text-center">Registration</h1>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Name:</label>
+            <input type="text" class="form-control" id="inputname" aria-describedby="emailHelp" required>
+            <small id="emailHelp" class="form-text text-muted">We will never share your information!</small>
+        </div>
+        <div class="form-group">
+            <label for="inputclass">Class:</label>
+            <input type="text" class="form-control" id="inputclass" required>
+        </div>
+        <div class="form-group">
+            <label for="inputadd">Admission No. </label>
+            <input type="text" class="form-control" id="inputadd" required>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary dcmt-btn mb-3" id="submitbtn">
+    </form>
+    <hr class="m">
+    <article class="container">
+        <h1 class="text-center display-5">Students List</h1>
+        <button class="btn btn-primary dcmt-btn mb-4" id="show">Show students</button>
+        <section class="students">
+            <table class="table block">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Class</th>
+                        <th scope="col">Admission No.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Martin Sharma</td>
+                        <td>11th</td>
+                        <td>1245</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob Mishra</td>
+                        <td>9th</td>
+                        <td>3452</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry Tivari</td>
+                        <td>8th</td>
+                        <td>2341</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Pappu Adam</td>
+                        <td>9th</td>
+                        <td>3453</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Alex Chetan</td>
+                        <td>6th</td>
+                        <td>2351</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+    <hr class="footer">
+    <footer id="footer">
+        <p class="text-right text-white bg-secondary py-2">@Created for fun only.</p>
+    </footer>
+</body>
+<script src="./app.js"></script>
+<script src="jquery-slim.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+
+</html>
