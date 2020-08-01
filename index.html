@@ -42,11 +42,11 @@
         <p class="lead">Please,<a href="#admission">register</a> for your addmission. Fill your details below.</p>
     </div>
     <hr>
-    <form class="container mb-4" id="admission">
+    <form class="container mb-4" id="admission" action="POST" netlify>
         <h1 class="display-5 text-center">Registration</h1>
         <div class="form-group">
             <label for="exampleInputEmail1">Name:</label>
-            <input type="text" class="form-control" id="inputname" aria-describedby="emailHelp" required>
+            <input type="text" class="form-control" id="inputname" aria-describedby="emailHelp" required name="name">
             <small id="emailHelp" class="form-text text-muted">We will never share your information!</small>
         </div>
         <div class="form-group">
