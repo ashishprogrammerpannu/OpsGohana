@@ -30,7 +30,6 @@ if (users !== null) {
 submit.addEventListener("submit", addUser);
 
 function addUser(event) {
-  event.preventDefault();
   alert.classList.replace("text-success", "text-danger");
   let valClass = inputClass.value;
   let valAdd = addmission.value;
